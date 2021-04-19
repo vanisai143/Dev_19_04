@@ -1,0 +1,38 @@
+<apex:page controller="arithematic" sidebar="false" >
+    <apex:form >
+        <apex:pageBlock title="Arithematic Operations" id="arith_id">
+        <apex:pageMessages />
+            <apex:pageBlockSection columns="1" title="" >  
+      
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Enter X value </apex:outputLabel>
+                <apex:inputText value="{!xvalue}"/>                
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Enter Y value </apex:outputLabel>
+                <apex:inputText value="{!yvalue}"/>    
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Select operation </apex:outputLabel>
+            <apex:selectList id="chooseColor" value="{!selected_operation}" size="1">
+            <apex:selectOption itemValue="Add" itemLabel="Add"/>
+            <apex:selectOption itemValue="Sub" itemLabel="Sub"/>
+        </apex:selectList>
+
+            </apex:pageBlockSectionItem>
+
+            <apex:pageBlockSectionItem >
+                <apex:commandButton value="submit" action="{!submit}" style="margin-left: 22%" reRender="arith_id"/>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Result </apex:outputLabel>
+                <apex:outputText value="{!result}"/>    
+            </apex:pageBlockSectionItem>
+            
+          </apex:pageBlockSection>
+       </apex:pageBlock>
+    </apex:form>   
+</apex:page>
