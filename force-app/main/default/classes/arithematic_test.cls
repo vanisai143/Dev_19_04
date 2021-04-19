@@ -5,13 +5,13 @@ public class arithematic_test {
    
         arithematic obj = new arithematic();
    
-        obj.xvalue = 10;
+        obj.xvalue = 6;
         obj.yvalue = 4;
 
         obj.selected_operation = 'Add';
 
         obj.submit();
-        System.assertEquals(14, obj.result);
+        System.assertEquals(10, obj.result);
 
         obj.selected_operation = 'Sub';
 
