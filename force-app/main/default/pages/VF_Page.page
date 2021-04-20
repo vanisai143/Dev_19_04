@@ -16,7 +16,7 @@
             
             <apex:pageBlockSectionItem >
             <apex:outputLabel >Select operation </apex:outputLabel>
-            <apex:selectList id="chooseColor" value="{!selected_operation}" size="1">
+            <apex:selectList id="chooseOpetation" value="{!selected_operation}" size="1">
             <apex:selectOption itemValue="Add" itemLabel="Add"/>
             <apex:selectOption itemValue="Sub" itemLabel="Sub"/>
         </apex:selectList>
