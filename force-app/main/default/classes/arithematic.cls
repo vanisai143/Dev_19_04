@@ -15,6 +15,7 @@ public class arithematic  {
     {
         result = xvalue-yvalue;
     }
+    
     else {}
 
         return null;
