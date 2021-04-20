@@ -15,7 +15,15 @@ public class arithematic  {
     {
         result = xvalue-yvalue;
     }
-    
+     else if (selected_operation == 'Mul')
+        {
+            result = xvalue*yvalue;
+        }
+        else if (selected_operation == 'Div')
+            {
+            result = xvalue/yvalue;
+    }
+
     else {}
 
         return null;
